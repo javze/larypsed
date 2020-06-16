@@ -31,12 +31,17 @@ pre {
 }
 
 .post p {
-	margin: .5rem 0;
+	// margin: .5rem 0;
+    color: #707070;
 }
 
 .homepost p {
 	margin: .5rem 0;
     text-align: justify;
+}
+
+.post p:first-child {
+    margin-top: 1em;
 }
 
 .post h1, .post h2, .post h3, .post h4 {
@@ -91,12 +96,17 @@ header a {
 
 header li {
 	margin-bottom: .2rem;
-	text-align: right;
+	// text-align: right;
 	margin-right: 2rem;
+}
+
+header li a {
+    color: #707070;
 }
 
 header a.active {
 	font-weight: bold;
+    color: black;
 }
 
 header,section {
@@ -115,7 +125,7 @@ h1,h2,h3,h4,h5 {
 	font-weight: 600;
 }
 
-h1:first-child {
+.post p:first-child h1:first-child {
 	margin-top: 0;
 }
 
@@ -177,6 +187,10 @@ main {
 }
 
 @media screen and (max-width: 45rem ) {
+header, section {
+    padding-top: 0;
+    padding-bottom: 0;
+}
 header li {
     display: inline;
 	margin-right: 0.5rem;
