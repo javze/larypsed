@@ -1,9 +1,17 @@
 links:
-- title: Writing
-  url: /
-- title: About
+- title: about
   url: /about
-- title: Search
-  url: /search
-- title: Rss
-  url: /atom.xml
+- title: painting
+  url: /painting
+- title: drawing
+  url: /drawing
+- title: space
+  url: /space
+- title: current
+  url: http://larypsed.blogspot.com
+- title: nonsofia
+  url: http://nonsofia.org
+- title: orthogonal
+  url: http://orthogonal.bg
+- title: contacts
+  url: /contacts
