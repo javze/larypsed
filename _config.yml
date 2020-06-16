@@ -12,7 +12,7 @@ permalink: pretty
 
 baseurl: "/larypsed"
 
-highlighter: none
+# highlighter: none
 
 exclude:
   - .jekyll-cache
