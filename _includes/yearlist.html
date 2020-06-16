@@ -1,0 +1,5 @@
+<p class="yearlist">
+    <span class="year">{{include.year}}</span>
+    <span class="descr">{{ include.descr | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+</p>
+
