@@ -225,7 +225,8 @@ figcaption {
   overflow-x: scroll;
   max-width: 70%;
   // max-height: 420px;
-  align-items: center;
+  align-items: flex-start;
+  justify-items: center;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
