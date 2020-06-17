@@ -1,0 +1,12 @@
+<p>
+<div class="slides">
+{% for item in include.collection %}
+    <div id="{{ item.title | uri_escape }}" class="slide" tabindex="{% increment ti %}">
+        <img loading="lazy" src="{{ item.url | relative_url }}" alt="{{ item.title }}" />
+        <p class="image-title">
+          {{ item.title | markdownify | remove: '<p>' | remove: '</p>' }}<br/>{{ item.medium }}<br/>{{ item.year }}
+        </p>
+    </div>
+{% endfor %}
+</div>
+</p>
