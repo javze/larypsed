@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: gallery
 permalink: /drawing
 ---
 <p>

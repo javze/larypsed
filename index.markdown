@@ -1,5 +1,6 @@
 ---
 layout: home
+permalink: /
 ---
 ![baza](/images/baza cropped bw s.jpg)
 
