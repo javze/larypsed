@@ -235,7 +235,7 @@ figcaption {
   align-items: flex-start;
   justify-items: center;
   scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-color: transparent transparent; /* thumb and track color */
   scrollbar-width: 0px;
