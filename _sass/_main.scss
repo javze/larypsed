@@ -12,9 +12,8 @@ body {
     font-family: "Helvetica Neue", Helvetica, system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    line-height:1.5;
-    font-size: 1rem;
-    color: rgb(22, 23, 26);
+    font-size: 0.9rem;
+    color: #707070;
 }
 
 nav ul {
@@ -22,9 +21,13 @@ nav ul {
 }
 
 a {
-    color: #000;
+    color: #707070;
+    text-decoration: none;
     text-decoration-skip-ink: auto;
-    text-decoration: underline;
+}
+
+.logo a { 
+    color: rgb(22, 23, 26);
 }
 
 pre {
@@ -90,6 +93,7 @@ header {
     // flex-grow:1;
     flex: 1 1 auto;
     position:relative;
+    line-height:1.5;
 }
 
 header a {
@@ -125,6 +129,7 @@ h1,h2,h3,h4,h5 {
     line-height: 1;
     margin: 1rem 0;
     font-weight: 600;
+    font-size: 0.9rem;
 }
 
 .post p:first-child h1:first-child {
@@ -180,7 +185,7 @@ main {
     flex-wrap:wrap;
     max-width:60rem;
     // margin:2rem auto;
-    padding:1rem;
+    padding:4rem;
 }
 
 .logo {
@@ -260,6 +265,9 @@ figcaption {
     font-size: smaller;
 }
 @media screen and (max-width: 45rem ) {
+    main {
+        padding: 1rem;
+    }
     header, section {
         padding-top: 0;
         padding-bottom: 0;
