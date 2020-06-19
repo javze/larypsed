@@ -1,4 +1,4 @@
-      function focusElement(prev) {
+      function advanceItem(prev) {
           var focussableElements = '[tabindex]:not([disabled]):not([tabindex="-1"])';
           var focussable = Array.prototype.filter.call(document.body.querySelectorAll(focussableElements),
               function(element) {
@@ -17,12 +17,12 @@
       window.addEventListener('keydown', function(e) {
           if (e.keyIdentifier == 'U+000A' || e.keyIdentifier == 'Enter' || e.keyCode == 13 || e.keyCode == 39) {
               e.preventDefault();
-              focusElement();
+              advanceItem();
               return false;
           }
           if (e.keyCode == 37) {
               e.preventDefault();
-              focusElement(true);
+              advanceItem(true);
               return false;
           }
       }, true);
