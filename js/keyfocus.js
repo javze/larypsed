@@ -5,6 +5,7 @@
                   return element.offsetWidth > 0 || element.offsetHeight > 0 
               });
           var index = focussable.indexOf(document.activeElement);
+          if ( index < 0 ) index = 0;
           var len = focussable.length;
           var incr = prev ? -1 : 1;
           var new_index = (index + incr) % len;
