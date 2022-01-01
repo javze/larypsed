@@ -7,11 +7,8 @@ ba, vuw, new zealand
 lives and works in sofia, bulgaria  
 
 # activities
-{% for item in site.data.about.activities %}
-{% include yearlist.html year=item.year descr=item.descr %}
-{% endfor %}
+{% assign last_year = "" %}
+{% include yearlist.html list=site.data.about.activities %}
 
 # selected exhibitions
-{% for item in site.data.about.exhibitions %}
-{% include yearlist.html year=item.year descr=item.descr %}
-{% endfor %}
+{% include yearlist.html list=site.data.about.exhibitions %}
