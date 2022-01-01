@@ -1,5 +1,10 @@
-<p class="yearlist">
-    <span class="year">{{include.year}}</span>
-    <span class="descr">{{ include.descr | markdownify | remove: '<p>' | remove: '</p>' }}</span>
-</p>
-
+{% assign last_year = "" %}
+{% for item in include.list %}
+  {% if item.year == last_year %}
+    {% assign display_year = "" %}
+  {% else %}
+    {% assign display_year = item.year %}
+  {% endif %}
+  {% include yearlist_item.html year=display_year descr=item.descr %}
+  {% assign last_year = item.year %}
+{% endfor %}
