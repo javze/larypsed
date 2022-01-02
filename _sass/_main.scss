@@ -211,8 +211,13 @@ figcaption {
     display: flex;
 }
 .year {
+    flex-shrink: 0;
     width: 3rem;
 }
+.descr {
+    margin-bottom: 0.2em;
+}
+
 *::-webkit-scrollbar {
   width: 0;
 }

@@ -1,7 +1,7 @@
 {% assign last_year = "" %}
 {% for item in include.list %}
   {% if item.year == last_year %}
-    {% assign display_year = "" %}
+    {% assign display_year = "&nbsp;" %}
   {% else %}
     {% assign display_year = item.year %}
   {% endif %}
