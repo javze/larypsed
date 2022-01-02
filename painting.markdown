@@ -1,4 +1,5 @@
 ---
+title: painting
 layout: gallery
 permalink: /painting
 ---

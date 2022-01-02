@@ -1,4 +1,5 @@
 ---
+title: drawing
 layout: gallery
 permalink: /drawing
 ---

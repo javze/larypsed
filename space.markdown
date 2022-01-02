@@ -1,4 +1,5 @@
 ---
+title: space
 layout: gallery
 permalink: /space
 ---
